@@ -1,0 +1,55 @@
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    background-color: #FFF;
+    color: #000;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50px 1 50px;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "hd hd hd" ". main ." "ft ft ft";
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-header {
+    background-color: red;
+}
+
+.right-header {
+    background-color: blue;
+}
+
+.left-footer {
+    background-color: green;
+}
+
+.right-footer {
+    background-color: yellow;
+}
+
+
+/*
+#logo {}
+
+#buttons {}
+*/
