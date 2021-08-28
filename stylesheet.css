@@ -1,55 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: arial, sans-serif;
-    font-size: 13px;
+    font-size: 1rem;
     background-color: #FFF;
     color: #000;
-    display: grid;
-    height: 100%;
-    grid-template-columns: 50px 1 50px;
-    grid-template-rows: 50px 1fr 50px;
-    grid-template-areas: "hd hd hd" ". main ." "ft ft ft";
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
+
+
+/* Header style */
 
 header {
-    grid-area: hd;
+    height: 10vh;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-}
-
-main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-footer {
-    grid-area: ft;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 13px;
+    padding: 15px
 }
 
 .left-header {
-    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+.left-header>div {
+    padding-right: 15px;
+    opacity: 0.75;
 }
 
 .right-header {
-    background-color: blue;
+    display: flex;
+    align-items: center;
 }
 
-.left-footer {
-    background-color: green;
+.right-header>div {
+    padding-right: 15px;
+    opacity: 0.75;
 }
 
-.right-footer {
-    background-color: yellow;
+#apps {
+    padding-right: 15px;
+    opacity: 0.75;
+}
+
+#sign-in {
+    background-color: #4285f4;
+    color: #fff;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    padding: 0 12px;
+    text-decoration: none;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
-/*
-#logo {}
+/* Main style */
 
-#buttons {}
-*/
+main {
+    border: solid;
+}
+
+footer {
+    border: solid;
+}
